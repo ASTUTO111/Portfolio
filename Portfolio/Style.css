@@ -627,3 +627,350 @@ html {
   transform: scale(1.3); /* Scale up logo to 110% */
 }
 /* ------------Media buttons-------------------------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+  /* Base styles */
+  body,
+  html {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /* Hides overflowed content and ensures a proper mobile view */
+
+  /* Logo and Header Adjustments */
+  .logo_box,
+  .start,
+  .Title_Start {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .start {
+    padding-top: 20px; /* Reduce el espacio superior */
+    text-align: center; /* Alinea el texto al centro */
+  }
+  .Title_Start,
+  .subtitle1,
+  .subtitle2,
+  .Computer {
+    margin: 10px 0; /* Agrega espacio entre los elementos */
+  }
+  .logo {
+    font-size: 1.8em; /* Smaller logo for mobile */
+    padding: 0.3em;
+  }
+
+  /* Main Titles */
+  .Title1 {
+    font-size: 2.5em; /* Larger font size for readability */
+    margin-left: 0; /* No margin for centered text */
+    padding: 0 10px; /* Padding to prevent text from touching the edges */
+  }
+
+  .subtitle1,
+  .subtitle2 {
+    font-size: 1.2em; /* Smaller subtitles */
+  }
+
+  .Computer {
+    font-size: 1.5em;
+  }
+
+  /* Resume Box */
+  .Resume_box {
+    justify-content: center;
+    padding: 20px 0; /* More padding for tap targets */
+  }
+
+  .Resume,
+  .logo_resume,
+  .resume_text {
+    flex-direction: column; /* Stack elements */
+    text-align: center;
+  }
+
+  .logo_resume {
+    width: 25px; /* Smaller image for mobile */
+  }
+
+  .resume_text {
+    font-size: 1em; /* Smaller text */
+  }
+
+  /* Social Logos */
+  .logos {
+    justify-content: space-around; /* Evenly space out logos */
+  }
+
+  .linkedin,
+  .GitHub,
+  .Stack {
+    width: 40px; /* Smaller logos */
+    height: 40px;
+    padding: 0 10px; /* Less padding */
+  }
+
+  /* Navigation Menu */
+  nav .navigation {
+    flex-direction: column; /* Stack nav items */
+    padding: 10px 0;
+  }
+
+  .navigation li {
+    padding: 5px 0; /* Less space between nav items */
+  }
+
+  .navigation li a {
+    font-size: 1em; /* Smaller font size */
+  }
+
+  /* Main Content Adjustments */
+  .Abaut_text,
+  .Tic_text {
+    width: 90%; /* Use more of the screen for content */
+    padding: 0 5%; /* Padding for readability */
+    font-size: 0.9em; /* Smaller font size */
+  }
+
+  .Abaut_more,
+  .Project_Abaut_more,
+  .See_More {
+    padding: 10px 15px; /* Smaller buttons */
+  }
+
+  /* Contact Form */
+  #contact {
+    width: 90%; /* Full width minus padding */
+    margin: 20px auto; /* Centered with margin */
+  }
+
+  #contact label {
+    font-size: 1em; /* Smaller labels */
+  }
+
+  #contact input,
+  #contact textarea {
+    font-size: 0.9em; /* Smaller input text */
+  }
+
+  #contact button {
+    font-size: 1em; /* Smaller button text */
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.8em; /* Smaller footer text */
+  }
+
+  /* Background */
+  .background {
+    display: none; /* Optional: Hide background animations on mobile */
+  }
+
+  /* See More Button */
+  .See_More {
+    font-size: 0.9em; /* Smaller button text */
+  }
+
+  /* Add any additional mobile-specific styles below */
+  /* Mejoras en la sección de inicio */
+  .start {
+    padding-top: 20px; /* Reduce el espacio superior */
+    text-align: center; /* Alinea el texto al centro */
+  }
+
+  .Title_Start,
+  .subtitle1,
+  .subtitle2,
+  .Computer {
+    margin: 10px 0; /* Agrega espacio entre los elementos */
+  }
+
+  .Title1 {
+    font-size: 36px; /* Tamaño de fuente más adecuado */
+  }
+
+  .subtitle1,
+  .subtitle2 {
+    font-size: 18px; /* Reduce el tamaño de los subtítulos */
+  }
+
+  .Computer {
+    font-size: 22px; /* Ajusta el tamaño del texto 'Computer science student' */
+  }
+  .Title_Tic {
+    padding-left: 10px;
+  }
+  .Tic_text a {
+    font-size: 15px; /* Reduce el tamaño del texto */
+  }
+  .Resume {
+    flex-direction: row;
+    display: flex;
+    padding-top: 20px; /* Reduce el espacio superior */
+    padding-bottom: 20px; /* Reduce el espacio inferior */
+    justify-content: center; /* Centra los elementos */
+  }
+  .logo_box {
+    width: 100%; /* Asegura que el logo se muestre correctamente */
+    justify-content: start; /* Centra el logo */
+  }
+  /* Ajustes para los logos */
+  .logos a {
+    margin-left: 0px;
+    padding: 0px; /* Reduce el espacio entre logos */
+    justify-content: start;
+  }
+
+  .linkedin,
+  .GitHub,
+  .Stack {
+    width: 40px; /* Ajusta el tamaño de los logos */
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  /* Mejoras en la navegación */
+  nav .navigation {
+    flex-direction: row; /* Mantiene los elementos de navegación en una fila */
+    justify-content: space-around; /* Distribuye el espacio uniformemente */
+    padding: 0;
+    margin-top: 0;
+    background: none; /* Opcional: quita el fondo si lo prefieres */
+    box-shadow: none; /* Elimina la sombra para un look más limpio */
+  }
+
+  nav .navigation li a {
+    font-size: 14px; /* Reduce el tamaño del texto para los enlaces */
+    padding: 5px 10px; /* Ajusta el padding para los enlaces */
+  }
+  .background {
+    display: block; /* Asegura que el fondo se muestre */
+  }
+
+  /* Ajustes en la sección de inicio para mejorar la organización y legibilidad */
+  .start {
+    padding-top: 20px; /* Reduce el espacio superior para un inicio más compacto */
+    padding-bottom: 20px; /* Espacio adicional en la parte inferior */
+    text-align: center; /* Alineación central de todo el texto */
+  }
+
+  .Title1,
+  .subtitle1,
+  .subtitle2,
+  .Computer {
+    margin: 5px 0; /* Reduce el espacio entre elementos para un look más limpio */
+  }
+
+  .subtitle1 {
+    font-size: 1.5rem; /* Ajuste de tamaño para evitar desbordamiento */
+    white-space: normal; /* Permite el salto de línea */
+  }
+
+  .Title1 {
+    font-size: 2rem; /* Tamaño de fuente ajustado para el título principal */
+  }
+
+  .Computer {
+    font-size: 1.7rem; /* Tamaño de fuente ajustado para subtítulos */
+    padding-top: 10px;
+    line-height: 25px; /* Elimina el espacio entre los logos */
+  }
+  .subtitle1 {
+    font-size: 1.4rem; /* Tamaño de fuente ajustado para subtítulos */
+    padding-top: 10px;
+    line-height: 25px; /* Elimina el espacio entre los logos */
+    width: 200px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+  }
+  .subtitle2 {
+    font-size: 1.4rem; /* Tamaño de fuente ajustado para subtítulos */
+    padding-top: 10px;
+    line-height: 25px; /* Elimina el espacio entre los logos */
+    width: 200px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+  }
+  /* Mejora la cercanía de los logos reduciendo el espacio entre ellos */
+  .logos {
+    padding: 20px 0; /* Espacio superior e inferior para los logos */
+    justify-content: center; /* Centra los logos */
+  }
+
+  .linkedin,
+  .GitHub,
+  .Stack {
+    margin: 0 10px; /* Espacio reducido entre logos */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Navegación más compacta y anclaje superior */
+  nav {
+    width: 100%; /* Uso completo del ancho disponible */
+
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que la nav se mantenga sobre otros elementos */
+    background-image: linear-gradient(
+      to right,
+      rgb(66, 133, 244),
+      rgba(217, 101, 112, 0.9)
+    ); /* Fondo semitransparente para la nav */
+    border-radius: 25px;
+  }
+
+  nav .navigation {
+    flex-direction: row; /* Elementos de navegación en fila */
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    padding: 5px 10px; /* Padding reducido para una nav más compacta */
+    margin: 0 auto; /* Centrado automático */
+    width: 95%; /* Uso completo del ancho disponible */
+  }
+
+  nav .navigation li a {
+    font-size: 0.8rem; /* Tamaño de fuente reducido para los enlaces */
+    padding: 5px; /* Padding reducido para los enlaces */
+  }
+  .Project_title,
+  .Abaut_title {
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 130px;
+    padding-bottom: 30px;
+  }
+  /* Botones "Ver Más" con efecto táctil */
+  .See_More:active {
+    transform: scale(0.95); /* Efecto de pulsación */
+    opacity: 0.8; /* Ligeramente más transparente */
+    transition:
+      transform 0.2s,
+      opacity 0.2s; /* Transiciones suaves */
+  }
+
+  /* Logos con efecto táctil */
+  .linkedin:active,
+  .GitHub:active,
+  .Stack:active {
+    transform: scale(0.95); /* Efecto de pulsación */
+    opacity: 0.8; /* Ligeramente más transparente */
+    transition:
+      transform 0.2s,
+      opacity 0.2s; /* Transiciones suaves */
+  }
+  .See_More {
+    font-size: 0.9em; /* Tamaño de fuente reducido para el botón */
+    color: white;
+    padding: 10px 15px; /* Padding reducido para el botón */
+    background-image: linear-gradient(
+      to right,
+      rgb(66, 133, 244),
+      rgba(217, 101, 112, 0.9)
+    );
+  }
+}
