@@ -1,9 +1,0 @@
-
-inspiration:
-https://bowanglan.dev/
-
-hilfe:
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
-Background:
-https://codepen.io/Mertl/pen/GexapP
