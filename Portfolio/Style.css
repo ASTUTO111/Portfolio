@@ -10,6 +10,8 @@ body {
   padding: 0;
 }
 .logo_box {
+
+
   display: flex;
   width: 100%;
   justify-content: start;
@@ -627,350 +629,210 @@ html {
   transform: scale(1.3); /* Scale up logo to 110% */
 }
 /* ------------Media buttons-------------------------------------------------------------------- */
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Se usa vh para asegurar que el body ocupe al menos toda la altura de la ventana */
+  display: flex;
+  flex-direction: column;
+}
 
-@media only screen and (max-width: 768px) {
-  /* Base styles */
-  body,
-  html {
-    max-width: 100vw;
-    overflow-x: hidden;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  /* Hides overflowed content and ensures a proper mobile view */
+.logo_box {
+  display: flex;
+  justify-content: flex-start; /* Alineación al inicio */
+}
 
-  /* Logo and Header Adjustments */
-  .logo_box,
-  .start,
-  .Title_Start {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-  }
-  .start {
-    padding-top: 20px; /* Reduce el espacio superior */
-    text-align: center; /* Alinea el texto al centro */
-  }
-  .Title_Start,
-  .subtitle1,
-  .subtitle2,
-  .Computer {
-    margin: 10px 0; /* Agrega espacio entre los elementos */
-  }
-  .logo {
-    font-size: 1.8em; /* Smaller logo for mobile */
-    padding: 0.3em;
-  }
+.logo {
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Ajuste de tamaño dinámico */
+  padding: 0.5em 1em;
+  background-image: linear-gradient(
+    to right,
+    rgb(66, 133, 244),
+    rgb(217, 101, 112)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  /* Main Titles */
-  .Title1 {
-    font-size: 2.5em; /* Larger font size for readability */
-    margin-left: 0; /* No margin for centered text */
-    padding: 0 10px; /* Padding to prevent text from touching the edges */
-  }
+.start {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5vw; /* Espaciado relativo al ancho de la ventana */
+}
 
-  .subtitle1,
-  .subtitle2 {
-    font-size: 1.2em; /* Smaller subtitles */
-  }
+.Title1,
+.subtitle1,
+.subtitle2,
+.Computer {
+  font-size: clamp(1rem, 2.5vw, 2rem); /* Ajuste de tamaño dinámico */
+}
 
-  .Computer {
-    font-size: 1.5em;
-  }
+.Resume_box,
+.logos {
+  display: flex;
+  justify-content: center;
+  padding: 2vw 0;
+}
 
-  /* Resume Box */
-  .Resume_box {
-    justify-content: center;
-    padding: 20px 0; /* More padding for tap targets */
-  }
+.Resume:hover,
+.linkedin:hover,
+.GitHub:hover,
+.Stack:hover {
+  transform: scale(1.1);
+}
 
-  .Resume,
-  .logo_resume,
-  .resume_text {
-    flex-direction: column; /* Stack elements */
-    text-align: center;
-  }
+nav .navigation {
+  display: flex;
+  justify-content: center;
+  padding: 1vw 0;
+}
 
-  .logo_resume {
-    width: 25px; /* Smaller image for mobile */
-  }
+nav .navigation li a {
+  padding: 0.5em 1em; /* Espaciado uniforme */
+  font-size: clamp(0.8rem, 1vw, 1.2rem); /* Ajuste de tamaño dinámico */
+}
 
-  .resume_text {
-    font-size: 1em; /* Smaller text */
-  }
+.Abaut_title h2,
+.Project_title h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem); /* Ajuste de tamaño dinámico */
+}
 
-  /* Social Logos */
-  .logos {
-    justify-content: space-around; /* Evenly space out logos */
-  }
+.Abaut_text,
+.Tic_text {
+  font-size: clamp(0.8rem, 2vw, 1rem); /* Ajuste de tamaño dinámico */
+}
 
-  .linkedin,
-  .GitHub,
-  .Stack {
-    width: 40px; /* Smaller logos */
-    height: 40px;
-    padding: 0 10px; /* Less padding */
-  }
+footer {
+  padding: 2vw 0;
+}
 
-  /* Navigation Menu */
-  nav .navigation {
-    flex-direction: column; /* Stack nav items */
-    padding: 10px 0;
-  }
+/* Ajustes adicionales para elementos específicos como botones y logos */
 
-  .navigation li {
-    padding: 5px 0; /* Less space between nav items */
-  }
+.See_More,
+.linkedin,
+.GitHub,
+.Stack {
+  transition: transform 0.3s ease;
+}
 
-  .navigation li a {
-    font-size: 1em; /* Smaller font size */
-  }
+.See_More:active,
+.linkedin:active,
+.GitHub:active,
+.Stack:active {
+  transform: scale(0.95); /* Efecto de presión para dispositivos táctiles */
+}
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Se usa vh para asegurar que el body ocupe al menos toda la altura de la ventana */
+  display: flex;
+  flex-direction: column;
+}
 
-  /* Main Content Adjustments */
-  .Abaut_text,
-  .Tic_text {
-    width: 90%; /* Use more of the screen for content */
-    padding: 0 5%; /* Padding for readability */
-    font-size: 0.9em; /* Smaller font size */
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  .Abaut_more,
-  .Project_Abaut_more,
-  .See_More {
-    padding: 10px 15px; /* Smaller buttons */
-  }
+.logo_box {
+  display: flex;
+  justify-content: flex-start; /* Alineación al inicio */
+}
 
-  /* Contact Form */
-  #contact {
-    width: 90%; /* Full width minus padding */
-    margin: 20px auto; /* Centered with margin */
-  }
+.logo {
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Ajuste de tamaño dinámico */
+  padding: 0.5em 1em;
+  background-image: linear-gradient(to right, rgb(66, 133, 244), rgb(217, 101, 112));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  #contact label {
-    font-size: 1em; /* Smaller labels */
-  }
+.start {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5vw; /* Espaciado relativo al ancho de la ventana */
+}
 
-  #contact input,
-  #contact textarea {
-    font-size: 0.9em; /* Smaller input text */
-  }
+.Title1, .subtitle1, .subtitle2, .Computer {
+  font-size: clamp(1rem, 2.5vw, 2rem); /* Ajuste de tamaño dinámico */
+}
 
-  #contact button {
-    font-size: 1em; /* Smaller button text */
-  }
+.Resume_box, .logos {
+  display: flex;
+  justify-content: center;
+  padding: 2vw 0;
+}
 
-  /* Footer */
-  footer {
-    font-size: 0.8em; /* Smaller footer text */
-  }
+.Resume:hover, .linkedin:hover, .GitHub:hover, .Stack:hover {
+  transform: scale(1.1);
+}
 
-  /* Background */
-  .background {
-    display: none; /* Optional: Hide background animations on mobile */
-  }
+nav .navigation {
+  display: flex;
+  justify-content: center;
+  padding: 1vw 0;
+}
 
-  /* See More Button */
-  .See_More {
-    font-size: 0.9em; /* Smaller button text */
-  }
+nav .navigation li a {
+  padding: 0.5em 1em; /* Espaciado uniforme */
+  font-size: clamp(0.8rem, 1vw, 1.2rem); /* Ajuste de tamaño dinámico */
+}
 
-  /* Add any additional mobile-specific styles below */
-  /* Mejoras en la sección de inicio */
-  .start {
-    padding-top: 20px; /* Reduce el espacio superior */
-    text-align: center; /* Alinea el texto al centro */
-  }
+.Abaut_title h2, .Project_title h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem); /* Ajuste de tamaño dinámico */
+}
 
-  .Title_Start,
-  .subtitle1,
-  .subtitle2,
-  .Computer {
-    margin: 10px 0; /* Agrega espacio entre los elementos */
-  }
+.Abaut_text, .Tic_text {
+  font-size: clamp(0.8rem, 2vw, 1rem); /* Ajuste de tamaño dinámico */
+}
 
-  .Title1 {
-    font-size: 36px; /* Tamaño de fuente más adecuado */
-  }
+footer {
+  padding: 2vw 0;
+}
 
-  .subtitle1,
-  .subtitle2 {
-    font-size: 18px; /* Reduce el tamaño de los subtítulos */
-  }
+/* Ajustes adicionales para elementos específicos como botones y logos */
 
-  .Computer {
-    font-size: 22px; /* Ajusta el tamaño del texto 'Computer science student' */
-  }
-  .Title_Tic {
-    padding-left: 10px;
-  }
-  .Tic_text a {
-    font-size: 15px; /* Reduce el tamaño del texto */
-  }
-  .Resume {
-    flex-direction: row;
-    display: flex;
-    padding-top: 20px; /* Reduce el espacio superior */
-    padding-bottom: 20px; /* Reduce el espacio inferior */
-    justify-content: center; /* Centra los elementos */
-  }
-  .logo_box {
-    width: 100%; /* Asegura que el logo se muestre correctamente */
-    justify-content: start; /* Centra el logo */
-  }
-  /* Ajustes para los logos */
-  .logos a {
-    margin-left: 0px;
-    padding: 0px; /* Reduce el espacio entre logos */
-    justify-content: start;
-  }
+.See_More, .linkedin, .GitHub, .Stack {
+  transition: transform 0.3s ease;
+}
 
-  .linkedin,
-  .GitHub,
-  .Stack {
-    width: 40px; /* Ajusta el tamaño de los logos */
-    height: 40px;
-    margin-left: 10px;
-  }
+.See_More:active, .linkedin:active, .GitHub:active, .Stack:active {
+  transform: scale(0.95); /* Efecto de presión para dispositivos táctiles */
+}
 
-  /* Mejoras en la navegación */
-  nav .navigation {
-    flex-direction: row; /* Mantiene los elementos de navegación en una fila */
-    justify-content: space-around; /* Distribuye el espacio uniformemente */
-    padding: 0;
-    margin-top: 0;
-    background: none; /* Opcional: quita el fondo si lo prefieres */
-    box-shadow: none; /* Elimina la sombra para un look más limpio */
-  }
+nav .navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(66, 133, 244), rgb(217, 101, 112));
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 20px auto;
+  width: fit-content;
+  position: sticky; /* Cambiado de fixed a sticky para mantenerlo en la parte superior sin necesidad de ajustes adicionales */
+  top: 0; /* Asegura que el menú se quede en la parte superior */
+  z-index: 1000; /* Mantiene el menú por encima de otros elementos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Opcional: Añade una sombra para destacar */
+}
 
-  nav .navigation li a {
-    font-size: 14px; /* Reduce el tamaño del texto para los enlaces */
-    padding: 5px 10px; /* Ajusta el padding para los enlaces */
-  }
-  .background {
-    display: block; /* Asegura que el fondo se muestre */
-  }
+nav .navigation li a {
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-  /* Ajustes en la sección de inicio para mejorar la organización y legibilidad */
-  .start {
-    padding-top: 20px; /* Reduce el espacio superior para un inicio más compacto */
-    padding-bottom: 20px; /* Espacio adicional en la parte inferior */
-    text-align: center; /* Alineación central de todo el texto */
-  }
-
-  .Title1,
-  .subtitle1,
-  .subtitle2,
-  .Computer {
-    margin: 5px 0; /* Reduce el espacio entre elementos para un look más limpio */
-  }
-
-  .subtitle1 {
-    font-size: 1.5rem; /* Ajuste de tamaño para evitar desbordamiento */
-    white-space: normal; /* Permite el salto de línea */
-  }
-
-  .Title1 {
-    font-size: 2rem; /* Tamaño de fuente ajustado para el título principal */
-  }
-
-  .Computer {
-    font-size: 1.7rem; /* Tamaño de fuente ajustado para subtítulos */
-    padding-top: 10px;
-    line-height: 25px; /* Elimina el espacio entre los logos */
-  }
-  .subtitle1 {
-    font-size: 1.4rem; /* Tamaño de fuente ajustado para subtítulos */
-    padding-top: 10px;
-    line-height: 25px; /* Elimina el espacio entre los logos */
-    width: 200px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-  }
-  .subtitle2 {
-    font-size: 1.4rem; /* Tamaño de fuente ajustado para subtítulos */
-    padding-top: 10px;
-    line-height: 25px; /* Elimina el espacio entre los logos */
-    width: 200px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-  }
-  /* Mejora la cercanía de los logos reduciendo el espacio entre ellos */
-  .logos {
-    padding: 20px 0; /* Espacio superior e inferior para los logos */
-    justify-content: center; /* Centra los logos */
-  }
-
-  .linkedin,
-  .GitHub,
-  .Stack {
-    margin: 0 10px; /* Espacio reducido entre logos */
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  /* Navegación más compacta y anclaje superior */
-  nav {
-    width: 100%; /* Uso completo del ancho disponible */
-
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Asegura que la nav se mantenga sobre otros elementos */
-    background-image: linear-gradient(
-      to right,
-      rgb(66, 133, 244),
-      rgba(217, 101, 112, 0.9)
-    ); /* Fondo semitransparente para la nav */
-    border-radius: 25px;
-  }
-
-  nav .navigation {
-    flex-direction: row; /* Elementos de navegación en fila */
-    justify-content: space-between; /* Distribuye los elementos uniformemente */
-    padding: 5px 10px; /* Padding reducido para una nav más compacta */
-    margin: 0 auto; /* Centrado automático */
-    width: 95%; /* Uso completo del ancho disponible */
-  }
-
-  nav .navigation li a {
-    font-size: 0.8rem; /* Tamaño de fuente reducido para los enlaces */
-    padding: 5px; /* Padding reducido para los enlaces */
-  }
-  .Project_title,
-  .Abaut_title {
-    display: flex;
-    width: 50%;
-    justify-content: start;
-    align-items: center;
-    padding-top: 50px;
-    padding-left: 130px;
-    padding-bottom: 30px;
-  }
-  /* Botones "Ver Más" con efecto táctil */
-  .See_More:active {
-    transform: scale(0.95); /* Efecto de pulsación */
-    opacity: 0.8; /* Ligeramente más transparente */
-    transition:
-      transform 0.2s,
-      opacity 0.2s; /* Transiciones suaves */
-  }
-
-  /* Logos con efecto táctil */
-  .linkedin:active,
-  .GitHub:active,
-  .Stack:active {
-    transform: scale(0.95); /* Efecto de pulsación */
-    opacity: 0.8; /* Ligeramente más transparente */
-    transition:
-      transform 0.2s,
-      opacity 0.2s; /* Transiciones suaves */
-  }
-  .See_More {
-    font-size: 0.9em; /* Tamaño de fuente reducido para el botón */
-    color: white;
-    padding: 10px 15px; /* Padding reducido para el botón */
-    background-image: linear-gradient(
-      to right,
-      rgb(66, 133, 244),
-      rgba(217, 101, 112, 0.9)
-    );
-  }
+nav .navigation li a:hover {
+  background-color: white;
+  color: rgb(66, 133, 244);
 }
