@@ -213,7 +213,7 @@ nav .navigation li a {
   font-family: "Arial", sans-serif; /* Usa la fuente deseada */
   color: white;
   background: transparent;
-  padding: 10px 20px; /* Ajusta el espaciado alrededor de los enlaces */
+  padding: 10px 50px; /* Ajusta el espaciado alrededor de los enlaces */
   border-radius: 15px; /* Redondeado de los enlaces individuales */
 }
 
@@ -228,7 +228,6 @@ nav .navigation li a:hover {
   top: 0;
   left: 50%;
   transform: translateX(-50%); /* Centra la navegación */
-  width: 35%; /* Extiende la navegación a lo ancho */
   border-radius: 25px; /* Opcional: elimina el borde redondeado */
   padding: 10px 0; /* Ajusta el padding para cuando está fijo */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
