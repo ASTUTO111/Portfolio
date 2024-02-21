@@ -1,9 +1,0 @@
-The error
-
------------------------------------------------------------------------ |
-Error: Bad value for attribute src on element img: Must be non-empty.   |
-From line 91, column 5; to line 91, column 36                           |
-ent">↩    <img id="imagenAmpliada" src="">↩  </d                       |
-----------------------------------------------------------------------  |
-
-its not a error the code need have the src empty
